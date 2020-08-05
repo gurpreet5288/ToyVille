@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "demoproject",
+    "slug": "demoproject",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/ToyVilleLogo.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expofirebaseauth"
+    },
+    "sdkVersion": "37.0.0",
+    "description": ""
+  }
+}
