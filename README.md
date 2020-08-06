@@ -1,6 +1,7 @@
 ToyVille
 
 Mobile App References
+
 https://www.npmjs.com/package/firebase (Firebase package)
 
 https://docs.expo.io/guides/using-firebase/#user-authentication (Firebase with Expo)
