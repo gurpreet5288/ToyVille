@@ -29,7 +29,7 @@ The user details were set in the previous function.
 On Backend.js
 1. createGoogleUser function- This function adds our google user on firestore.
 
-<br><br>
+<br>
 
 
 ### Mobile App References
