@@ -1,5 +1,35 @@
 ToyVille
 
+Google Sign In Flow
+
+Screens that have code for google sign in are:
+LoginScreen.js
+Backend.js
+
+First of all, we setup an app on Google Developer Console, and created iOS OAuth client
+Id, android OAuth client id, Web client id. We replaced our firebase’s web client ID and web
+client secret with this mew web client id and secret. Then we installed Expo-Google-App-
+Auth that provides Google Sign in for expo react native apps. After that we used the
+following steps:
+
+On LoginScreen.js
+1. signInWithGoogleAsync function- In this function, we added the both iOS as well as
+Android client ids along with scopes profile and email. This function return access
+and id token along with additional user information such as name, email, profile
+picture etc. Reference to another function (onSignIn) is given in this function and
+result is passed as an argument in the (this.onSignIn(result)) function.
+2. onSignIn function- This function handles firebase connectivity of our OAuth. Here,
+we use google’s id token and check whether the google user is already signed in
+firebase. Here we also set our user details name, email and image as google user’s
+details and put reference to handleSignUp function.
+3. handleSignUp function- In this function we made a call to createGoogleUser function
+that is defined in Backend.js file and we passed our user’s details in this function .
+The user details were set in the previous function.
+
+On Backend.js
+1. createGoogleUser function- This function adds our google user on firestore.
+
+
 Mobile App References
 
 https://www.npmjs.com/package/firebase (Firebase package)
