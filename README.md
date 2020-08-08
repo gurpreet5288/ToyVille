@@ -1,6 +1,6 @@
 # ToyVille
 
-# Google Sign In Flow 
+### Google Sign In Flow 
 
 Screens that have code for google sign in are:
 LoginScreen.js
